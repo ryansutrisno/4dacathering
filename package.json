@@ -1,0 +1,21 @@
+{
+  "name": "4da-cathering",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "4DA Cathering - Aroma Bakar Otentik, Warisan Tradisi",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^5.18.1",
+    "@astrojs/tailwind": "^5.1.4",
+    "tailwindcss": "^3.4.17"
+  }
+}

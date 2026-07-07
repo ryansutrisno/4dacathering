@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Utilities from Stitch */
+@layer utilities {
+  .soot-shadow {
+    box-shadow: 0 4px 12px -2px rgba(45, 45, 45, 0.15);
+  }
+
+  .text-smoke-gradient {
+    background: linear-gradient(180deg, #1d1c15 0%, #58413c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Texture Overlay */
+.texture-overlay {
+  background-image: url('https://www.transparenttextures.com/patterns/p6.png');
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

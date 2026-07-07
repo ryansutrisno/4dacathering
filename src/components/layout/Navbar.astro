@@ -1,0 +1,69 @@
+---
+import { brand, nav } from '../../data/copy';
+import { buildWALink } from '../../utils/wa';
+import logoImg from '../../assets/logo-4da-cathering.jpeg';
+
+const waLink = buildWALink(nav.waMessage);
+---
+
+<header class="bg-surface sticky top-0 z-40 shadow-[0_4px_6px_-1px_rgba(45,45,45,0.15)]">
+  <nav class="flex justify-between items-center w-full px-gutter py-4 max-w-[1200px] mx-auto">
+    <div class="flex items-center gap-sm">
+      <img
+        alt={brand.name + ' Logo'}
+        class="h-10 w-10 rounded-full object-cover border border-outline-variant"
+        src={logoImg.src}
+        width="40"
+        height="40"
+      />
+      <span class="text-headline-sm font-headline-sm font-bold text-primary">{brand.name}</span>
+    </div>
+    <div class="hidden md:flex gap-lg items-center">
+      <a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="#menu">Menu Utama</a>
+      <a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="#outlet">Lokasi Outlet</a>
+      <a
+        class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md active:scale-95 transition-transform hover:bg-secondary"
+        href={waLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {nav.ctaLabel}
+      </a>
+    </div>
+    <div class="md:hidden">
+      <button id="mobile-menu-btn" class="text-primary p-2" aria-label="Toggle menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-outline-variant px-gutter pb-4">
+    <div class="flex flex-col gap-3 pt-3">
+      <a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors py-2" href="#menu">Menu Utama</a>
+      <a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors py-2" href="#outlet">Lokasi Outlet</a>
+      <a
+        class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-md text-center active:scale-95 transition-transform hover:bg-secondary"
+        href={waLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {nav.ctaLabel}
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+
+  // Close on anchor click
+  menu?.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      menu?.classList.add('hidden');
+    });
+  });
+</script>

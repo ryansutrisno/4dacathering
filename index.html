@@ -1,0 +1,393 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>4DA Cathering - Aroma Bakar Otentik</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#ede8dc",
+                        "surface-variant": "#e7e2d6",
+                        "surface-bright": "#fef9ed",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dedace",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "secondary": "#a23f00",
+                        "primary-fixed-dim": "#ffb4a2",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#7c2e00",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface": "#fef9ed",
+                        "surface-container-low": "#f8f3e7",
+                        "on-secondary-fixed": "#351000",
+                        "inverse-surface": "#323029",
+                        "primary-fixed": "#ffdad2",
+                        "outline": "#8c716b",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "secondary-fixed-dim": "#ffb595",
+                        "on-primary-fixed-variant": "#891e02",
+                        "on-secondary-container": "#5c2000",
+                        "on-primary-container": "#ffd9d0",
+                        "surface-tint": "#aa3619",
+                        "tertiary-fixed": "#e4e2e1",
+                        "secondary-container": "#fc7127",
+                        "on-tertiary-container": "#e4e1e1",
+                        "primary-container": "#b23b1e",
+                        "surface-container": "#f2ede2",
+                        "tertiary": "#4c4c4c",
+                        "tertiary-container": "#656464",
+                        "inverse-on-surface": "#f5f0e4",
+                        "outline-variant": "#e0bfb8",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "background": "#fef9ed",
+                        "inverse-primary": "#ffb4a2",
+                        "on-background": "#1d1c15",
+                        "on-surface-variant": "#58413c",
+                        "on-surface": "#1d1c15",
+                        "primary": "#912307",
+                        "secondary-fixed": "#ffdbcd",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-container-highest": "#e7e2d6",
+                        "on-primary-fixed": "#3c0700",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "container-max": "1200px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-sm": ["Libre Caslon Text"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soot-shadow {
+            box-shadow: 0 4px 12px -2px rgba(45, 45, 45, 0.15);
+        }
+        .text-smoke-gradient {
+            background: linear-gradient(180deg, #1d1c15 0%, #58413c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .texture-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-secondary selection:text-white">
+<!-- Texture Overlay for "Tradisi" feel -->
+<div class="fixed inset-0 texture-overlay z-50"></div>
+<!-- Navigation -->
+<header class="bg-surface sticky top-0 z-40 docked full-width shadow-[0_4px_6px_-1px_rgba(45,45,45,0.15)]">
+<nav class="flex justify-between items-center w-full px-gutter py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-sm">
+<img alt="4DA Cathering Logo" class="h-10 w-10 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1zxaiPHHzFL9E3pGJeJ29fRMZWUoOS_JLYA9gN0QiVMlH6O_8FeAd6iDsg9rIsobt-N8O3qKuI58gxWg3uvArFB8zkdj9B3I_RThTnVwUABQG8C3RMAZsaL2HsSj_4tpCwkEoxRgZImAZyRlh3oYthJPyTCLBf6yqCn2pt5x7eH683WBiPo64g5nzUMgFS_pgNBV6Ikhf9rtWNGh9EIYw545svHuMEgkrUgW_iXP2awlnsxmebmczc2Z5HRShh_l17sexzTNZBjM">
+<span class="text-headline-sm font-headline-sm font-bold text-primary">4DA Cathering</span>
+</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="#menu">Menu Utama</a>
+<a class="text-on-surface-variant font-label-md hover:text-secondary transition-colors duration-200" href="#outlet">Lokasi Outlet</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md active:scale-95 transition-transform hover:bg-secondary" href="https://wa.me/6281291186935">Pesan Sekarang</a>
+</div>
+<div class="md:hidden">
+<button class="text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-lg items-center py-xl">
+<div class="md:col-span-7 z-10 order-2 md:order-1">
+<div class="inline-flex items-center gap-xs bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full mb-base">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="text-label-sm font-label-sm uppercase tracking-widest">Spesialis Ayam Bakar</span>
+</div>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg text-smoke-gradient leading-tight mb-base">
+                    Aroma Bakar Otentik,<br>Warisan Tradisi
+                </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mb-lg">
+                    Nikmati kelezatan ayam bakar bumbu rahasia dengan teknik pemanggangan tradisional yang meresap hingga ke tulang. Gurih, manis, dan smokey!
+                </p>
+<div class="flex flex-col sm:flex-row gap-base">
+<a class="bg-primary text-on-primary px-6 py-3 md:px-xl md:py-md rounded-lg font-label-md text-center soot-shadow active:scale-[0.98] transition-all hover:bg-secondary flex items-center justify-center gap-sm w-full md:w-auto" href="https://wa.me/6281291186935"><span class="material-symbols-outlined">chat</span>Pesan via WhatsApp</a>
+<a class="border-2 border-outline text-on-surface py-md rounded-lg font-label-md text-center hover:bg-surface-variant transition-colors px-6" href="#menu">
+                        Lihat Menu
+                    </a>
+</div>
+</div>
+<div class="md:col-span-5 relative order-1 md:order-2 mb-lg md:mb-0">
+<div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden soot-shadow border-8 border-surface transform md:rotate-3 hover:rotate-0 transition-transform duration-500">
+<img alt="Ayam Bakar 1 Ekor Spesial 4DA Cathering" class="w-full h-full object-cover aspect-[3/4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Pj3XC2FtCBVoRfn99Q8-LG19dDbLd15TcAqO1AFsYzoI4S7niVsKiHD_MqEaFKF3x3gWl-Bq4pE3JzWzJx5pu6JmRpsZcBoGX4-YSAiVYl84hgIousIIU5HMBcYF3WLPejvYppNWgFVEI6F14HNBpYzCTxhp9NClodSbAmGunZkgeMe-uJ4aTjXC-NiO8vqwdw2GTVCi5WELKaB_um1TfrgvovVnXCRmfnZp3Esub8OAKBWSzpUPN6QcYKoXVw4Ic-L3E51uVLw">
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 bg-secondary text-on-secondary p-6 rounded-xl soot-shadow transform md:-rotate-6 left-0">
+<p class="font-headline-sm text-headline-sm">Rp 80rb</p>
+<p class="text-label-sm font-label-sm opacity-80 uppercase">Per Ekor</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section (Bento Style) -->
+<section class="py-xl bg-surface px-gutter" id="menu">
+<div class="max-w-container-max mx-auto">
+<div class="mb-lg text-center md:text-left">
+<h2 class="text-headline-md font-headline-md text-primary mb-xs">Menu Unggulan</h2>
+<div class="h-1 w-20 bg-secondary rounded-full md:mx-0 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-base md:gap-lg">
+<!-- Main Item -->
+<div class="md:col-span-8 group relative rounded-2xl overflow-hidden soot-shadow bg-surface-container-high border border-outline-variant/30 flex flex-col md:flex-row">
+<div class="md:w-1/2 overflow-hidden">
+<img alt="Nasi Ayam Bakar Besar Per Dus" class="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClkADxT_Ri9bOmrFzvNcPevzqdKtKYObFQFvuUF56My6EFYbCRDDDiXHum2Vfq8DCfh8CrOIiynRyU-xtQi-I2PPnXuXu0JG8SAvmUnQ7DSIfLg6PjhTsHwIwyW3umme-AZDmn2zpUpxVCLSGNW6gwFBSqyKk-yjYz208ymoPvyP3mNbNpqFbAYGP-e7zKmZlmvENyVuw8f5kwc-8Dnc6_mk1HopImPAEZyHpg1qssTf5GULtJC9ecZj12u_m359rc3tu-piSfehY">
+</div>
+<div class="p-lg md:w-1/2 flex flex-col justify-center">
+<span class="text-secondary font-label-md mb-xs uppercase tracking-widest">Favorit Kantor</span>
+<h3 class="text-headline-sm font-headline-sm mb-base text-on-surface">Nasi Ayam Bakar Besar (Per Dus)</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-lg">Paket lengkap eksklusif dengan nasi pulen, sambal korek, dan lalapan segar. Dikemas rapi dengan kotak dus premium.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-headline-sm font-headline-sm text-primary">Rp 21.000</span>
+<a class="bg-on-surface text-surface px-4 py-2 rounded-lg font-label-md hover:bg-primary transition-colors md:px-8" href="https://wa.me/6281291186935">Pesan</a>
+</div>
+</div>
+</div>
+<!-- Side Item 1 -->
+<div class="md:col-span-4 group rounded-2xl overflow-hidden soot-shadow bg-surface-container-low border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img alt="Nasi Ayam Bakar Besar Styrofoam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxGCV7m2hrVI621H6Em50-ZiBqOfMk1QPL0IFyjSAOOgIyCv4GWRVnP4qG9s7fhjoSDm4CqW-BM0LPS8062_iZmDK4T19b1VB7hUWtvvgsTM8Ik1mWSYrDLIpyN5Uix6XDDVSoS5yGf2ai5uekGVWZ_oLLyDFt4JoUOlepn_yJgvnDJXEIFwJVhDDAsikG7QHPJ01lfDw5-xL-SuEppqsqZh5pjM4RSlORQjV3VX7t0iYzSv4t_-0OLiIX1Z3dDHUSqkWXFUQR3M0">
+</div>
+<div class="p-base">
+<h3 class="text-label-md font-label-md mb-xs">Nasi Ayam Bakar Besar (Styrofoam)</h3>
+<p class="text-primary font-headline-sm text-headline-sm">Rp 19.000</p>
+<div class="mt-base pt-base border-t border-outline-variant flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Porsi Kenyang</span>
+<a class="text-secondary font-label-md hover:underline" href="https://wa.me/6281291186935">Detail</a>
+</div>
+</div>
+</div>
+<!-- Side Item 2 (The Cheap One) -->
+<div class="md:col-span-4 group rounded-2xl overflow-hidden soot-shadow bg-surface-container-low border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img alt="Nasi Ayam Bakar Kecil Styrofoam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkl9qkEQsXW5O07STVxYYYYMHpCn4jV_chkG8DYnu0cqflEPuPjESC5ZfUSfGRDpfaOjxbay1ryu3lRpPfPMV2yVfyd0V42kYbfs2lUy7fOIGDBg9nTjlAcDtpQ70Z8biz42DdvlEnuo7ZJWg9SIcgOCafAv2v9j2GXBeNI0gMOgb9MzaDAswdl4aDj_DEwoGDZ_c6oIsraH_EU1SDAZogieKltNWfJ-c_EOgZzzL4LtV4xBKVmgrQ9p9TjmfIq3mwFrOnxzt2nhw">
+</div>
+<div class="p-base">
+<h3 class="text-label-md font-label-md mb-xs">Nasi Ayam Bakar Kecil (Styrofoam)</h3>
+<p class="text-primary font-headline-sm text-headline-sm">Rp 11.000</p>
+<div class="mt-base pt-base border-t border-outline-variant flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Hemat Nikmat</span>
+<a class="text-secondary font-label-md hover:underline" href="https://wa.me/6281291186935">Detail</a>
+</div>
+</div>
+</div>
+<!-- Brand Value Card -->
+<div class="md:col-span-8 bg-primary-container text-on-primary-container p-lg rounded-2xl flex flex-col md:flex-row items-center gap-lg">
+<div class="text-center md:text-left flex-1">
+<h4 class="text-headline-sm font-headline-sm mb-xs">Bahan Segar Setiap Hari</h4>
+<p class="text-body-md font-body-md opacity-90">Kami hanya menggunakan ayam pilihan yang dipotong setiap subuh dan dibakar dengan arang batok kelapa untuk aroma maksimal.</p>
+</div>
+<div class="flex gap-base">
+<div class="w-12 h-12 rounded-full bg-surface/20 flex items-center justify-center">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface/20 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Outlet Info Section -->
+<section class="py-xl bg-surface-container-low" id="outlet">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div class="rounded-3xl overflow-hidden h-80 md:h-[500px] soot-shadow border-4 border-surface relative group">
+<div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors z-10"></div>
+<!-- Simulated Map Element -->
+<div class="w-full h-full bg-[#e5e7eb] flex items-center justify-center" data-location="Karawang SMPIT Al-Irsyad">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-6xl mb-base">location_on</span>
+<p class="font-headline-sm text-on-surface">Lokasi Kami di Karawang</p>
+</div>
+</div>
+<div class="absolute bottom-base left-base right-base z-20">
+<a class="w-full bg-surface text-on-surface py-4 rounded-xl font-label-md flex items-center justify-center gap-sm soot-shadow hover:bg-primary hover:text-on-primary transition-all" href="https://maps.google.com/?q=Karawang+SMPIT+Al-Irsyad" target="_blank">
+<span class="material-symbols-outlined">map</span>
+                        Buka di Google Maps
+                    </a>
+</div>
+</div>
+<div>
+<h2 class="text-display-lg-mobile md:text-headline-md font-headline-md text-primary mb-lg">Kunjungi Outlet Kami</h2>
+<div class="space-y-lg">
+<div class="flex gap-base">
+<div class="w-12 h-12 shrink-0 rounded-full bg-surface flex items-center justify-center text-primary soot-shadow">
+<span class="material-symbols-outlined">pin_drop</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-secondary uppercase tracking-wider">Alamat</h4>
+<p class="text-body-lg font-body-lg">Karawang (samping SMPIT Al-Irsyad)</p>
+<p class="text-body-md text-on-surface-variant">Jawa Barat, Indonesia</p>
+</div>
+</div>
+<div class="flex gap-base">
+<div class="w-12 h-12 shrink-0 rounded-full bg-surface flex items-center justify-center text-primary soot-shadow">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="text-label-md font-label-md text-secondary uppercase tracking-wider">Jam Operasional</h4>
+<p class="text-body-lg font-body-lg">Setiap Hari</p>
+<p class="text-body-md text-on-surface-variant font-bold">10:00 - 21:00 WIB</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-base rounded-2xl border-l-4 border-primary mt-lg">
+<p class="text-body-md italic text-on-surface-variant">"Pelayanan cepat, rasa mantap. Ayam bakarnya juara di daerah Al-Irsyad Karawang!"</p>
+<p class="text-label-sm font-label-sm text-primary mt-xs">— Pelanggan Setia</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Banner -->
+<section class="py-xl px-gutter">
+<div class="max-w-container-max mx-auto bg-on-surface text-surface rounded-[2rem] p-lg md:p-xl text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-6xl text-secondary mb-base">restaurant_menu</span>
+<h2 class="text-display-lg-mobile md:text-display-lg font-display-lg mb-lg">Lapar? Pesan Sekarang!</h2>
+<p class="text-body-lg font-body-lg opacity-80 max-w-2xl mx-auto mb-xl">
+                    Jangan tunggu lama untuk merasakan sensasi smokey ayam bakar 4DA. Pesan via WhatsApp dan kami antar ke depan pintu rumah Anda.
+                </p>
+<a class="inline-flex items-center gap-sm bg-primary text-on-primary px-8 py-4 md:px-xl md:py-lg rounded-full font-label-md text-lg md:text-xl hover:bg-secondary hover:scale-105 transition-all soot-shadow w-full md:w-auto justify-center" href="https://wa.me/6281291186935"><span class="material-symbols-outlined">chat</span>Pesan via WhatsApp</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t-2 border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter py-lg max-w-container-max mx-auto gap-base">
+<div class="flex flex-col items-center md:items-start gap-xs">
+<span class="text-headline-sm font-headline-sm text-primary">4DA Cathering</span>
+<p class="text-body-md font-body-md text-on-surface-variant">© 2024 4DA Cathering. Aroma Bakar Otentik, Warisan Tradisi.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href="#menu">Menu Utama</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href="#outlet">Lokasi Outlet</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href="https://wa.me/6281291186935">Hubungi Kami</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href="#">Kebijakan Privasi</a>
+</div>
+<div class="flex gap-base">
+<div class="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation Bottom (Floating) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden w-[90%] bg-surface/90 backdrop-blur-md rounded-2xl soot-shadow border border-outline-variant/30 p-2 flex justify-around items-center">
+<a class="flex flex-col items-center p-2 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center p-2 text-on-surface-variant hover:text-secondary" href="#menu">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[10px] font-label-sm">Menu</span>
+</a>
+<a class="flex flex-col items-center p-2 text-on-surface-variant hover:text-secondary" href="#outlet">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[10px] font-label-sm">Outlet</span>
+</a>
+<a class="flex flex-col items-center p-2 text-on-surface-variant hover:text-secondary" href="https://wa.me/6281291186935">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-[10px] font-label-sm">Pesan</span>
+</a>
+</div>
+<script>
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+
+        // Smooth scroll adjustment for sticky header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+</body></html>

@@ -1,0 +1,26 @@
+---
+import { stickyWA } from '../../data/copy';
+import { buildWALink } from '../../utils/wa';
+
+const waLink = buildWALink(stickyWA.waMessage);
+---
+
+<!-- Mobile Bottom Navigation -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden w-[90%] bg-surface/90 backdrop-blur-md rounded-2xl soot-shadow border border-outline-variant/30 p-2 flex justify-around items-center">
+  <a class="flex flex-col items-center p-2 text-primary" href="#">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+    <span class="text-[10px] font-label-sm">Home</span>
+  </a>
+  <a class="flex flex-col items-center p-2 text-on-surface-variant hover:text-secondary" href="#menu">
+    <span class="material-symbols-outlined">menu_book</span>
+    <span class="text-[10px] font-label-sm">Menu</span>
+  </a>
+  <a class="flex flex-col items-center p-2 text-on-surface-variant hover:text-secondary" href="#outlet">
+    <span class="material-symbols-outlined">location_on</span>
+    <span class="text-[10px] font-label-sm">Outlet</span>
+  </a>
+  <a class="flex flex-col items-center p-2 text-on-surface-variant hover:text-secondary" href={waLink} target="_blank" rel="noopener noreferrer">
+    <span class="material-symbols-outlined">chat</span>
+    <span class="text-[10px] font-label-sm">Pesan</span>
+  </a>
+</div>

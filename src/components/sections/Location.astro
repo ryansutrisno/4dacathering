@@ -1,0 +1,88 @@
+---
+import { location, ctaBanner } from '../../data/copy';
+import { buildWALink } from '../../utils/wa';
+
+const waLink = buildWALink(ctaBanner.ctaMessage);
+---
+
+<!-- Outlet Info Section -->
+<section class="py-xl bg-surface-container-low" id="outlet">
+  <div class="max-w-[1200px] mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+    <div class="rounded-3xl overflow-hidden h-80 md:h-[500px] soot-shadow border-4 border-surface relative group">
+      <div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors z-10"></div>
+      <!-- Google Maps Embed -->
+      <iframe
+        src={location.mapsEmbed}
+        class="w-full h-full border-0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Lokasi 4DA Cathering"
+      ></iframe>
+      <div class="absolute bottom-base left-base right-base z-20">
+        <a
+          class="w-full bg-surface text-on-surface py-4 rounded-xl font-label-md flex items-center justify-center gap-sm soot-shadow hover:bg-primary hover:text-on-primary transition-all"
+          href={location.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="material-symbols-outlined">map</span>
+          Buka di Google Maps
+        </a>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-display-lg-mobile md:text-headline-md font-headline-md text-primary mb-lg">Kunjungi Outlet Kami</h2>
+      <div class="space-y-lg">
+        <div class="flex gap-base">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-surface flex items-center justify-center text-primary soot-shadow">
+            <span class="material-symbols-outlined">pin_drop</span>
+          </div>
+          <div>
+            <h4 class="text-label-md font-label-md text-secondary uppercase tracking-wider">Alamat</h4>
+            <p class="text-body-lg font-body-lg">{location.address}</p>
+            <p class="text-body-md text-on-surface-variant">{location.region}</p>
+          </div>
+        </div>
+        <div class="flex gap-base">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-surface flex items-center justify-center text-primary soot-shadow">
+            <span class="material-symbols-outlined">schedule</span>
+          </div>
+          <div>
+            <h4 class="text-label-md font-label-md text-secondary uppercase tracking-wider">Jam Operasional</h4>
+            <p class="text-body-lg font-body-lg">{location.hours}</p>
+            <p class="text-body-md text-on-surface-variant font-bold">{location.hourDetail}</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-highest p-base rounded-2xl border-l-4 border-primary mt-lg">
+          <p class="text-body-md italic text-on-surface-variant">{location.testimonial}</p>
+          <p class="text-label-sm font-label-sm text-primary mt-xs">{location.testimonialAuthor}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Banner -->
+<section class="py-xl px-gutter">
+  <div class="max-w-[1200px] mx-auto bg-on-surface text-surface rounded-[2rem] p-lg md:p-xl text-center relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+    <div class="relative z-10">
+      <span class="material-symbols-outlined text-6xl text-secondary mb-base">restaurant_menu</span>
+      <h2 class="text-display-lg-mobile md:text-display-lg font-display-lg mb-lg">{ctaBanner.headline}</h2>
+      <p class="text-body-lg font-body-lg opacity-80 max-w-2xl mx-auto mb-xl">
+        {ctaBanner.subtitle}
+      </p>
+      <a
+        class="inline-flex items-center gap-sm bg-primary text-on-primary px-8 py-4 md:px-xl md:py-lg rounded-full font-label-md text-lg md:text-xl hover:bg-secondary hover:scale-105 transition-all soot-shadow w-full md:w-auto justify-center"
+        href={waLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="material-symbols-outlined">chat</span>
+        {ctaBanner.ctaLabel}
+      </a>
+    </div>
+  </div>
+</section>

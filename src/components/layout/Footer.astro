@@ -1,0 +1,26 @@
+---
+import { brand, footer } from '../../data/copy';
+import { buildWALink } from '../../utils/wa';
+
+const waLink = buildWALink();
+---
+
+<footer class="bg-surface-container-highest border-t-2 border-outline-variant">
+  <div class="flex flex-col md:flex-row justify-between items-center w-full px-gutter pt-lg pb-[120px] md:pb-lg max-w-[1200px] mx-auto gap-base">
+    <div class="flex flex-col items-center md:items-start gap-xs">
+      <span class="text-headline-sm font-headline-sm text-primary">{brand.name}</span>
+      <div class="flex items-center gap-1 text-body-md font-body-md text-on-surface-variant flex-wrap justify-center md:justify-start">
+        Made with
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#ef4444" class="text-red-500">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        by <a href="https://trazmedia.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary underline transition-colors">Trazmedia</a>
+      </div>
+    </div>
+    <div class="flex flex-wrap justify-center gap-md">
+      <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href="#menu">Menu Utama</a>
+      <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href="#outlet">Lokasi Outlet</a>
+      <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary underline transition-all" href={waLink} target="_blank" rel="noopener noreferrer">Hubungi Kami</a>
+    </div>
+  </div>
+</footer>
