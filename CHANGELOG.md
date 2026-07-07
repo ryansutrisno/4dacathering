@@ -1,3 +1,19 @@
+## 1.0.0 (2026-07-07)
+
+### Features
+
+* initialize 4DA Cathering catering landing site ([d343ce8](https://github.com/ryansutrisno/4dacathering/commit/d343ce88720f64404d30ff80ec8f515d45e29406))
+* **meta:** add fb pixel and wa click tracking ([170d371](https://github.com/ryansutrisno/4dacathering/commit/170d3712848e6c507ea227eeb03e058a7b56463b))
+
+### Chores
+
+* add semantic-release setup and release docs ([13951cc](https://github.com/ryansutrisno/4dacathering/commit/13951cc65c1c0e28fb4feab45b8fc0e6151f76cc))
+* update repository URLs to remove hyphen ([3bea129](https://github.com/ryansutrisno/4dacathering/commit/3bea129c46fd93eec0605a0fa23d9159a08efe70))
+
+### Continuous Integration
+
+* **release:** update node.js version to 24 ([d0984c9](https://github.com/ryansutrisno/4dacathering/commit/d0984c90cc44598b1f3a68eaa8dcb713545435a4))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
