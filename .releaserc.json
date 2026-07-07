@@ -3,7 +3,7 @@
     "main",
     "master"
   ],
-  "repositoryUrl": "https://github.com/ryansutrisno/4da-cathering.git",
+  "repositoryUrl": "https://github.com/ryansutrisno/4dacathering.git",
   "tagFormat": "v${version}",
   "plugins": [
     [
