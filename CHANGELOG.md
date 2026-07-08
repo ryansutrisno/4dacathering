@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/ryansutrisno/4dacathering/compare/v1.0.0...v1.0.1) (2026-07-08)
+
+### Bug Fixes
+
+* update Google Maps URL and meta description to Jepara ([e7d3433](https://github.com/ryansutrisno/4dacathering/commit/e7d3433dbdd3e7b19ceb02f0427711ff5f5b3f82))
+
 ## 1.0.0 (2026-07-07)
 
 ### Features
