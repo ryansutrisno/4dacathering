@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/ryansutrisno/4dacathering/compare/v1.0.2...v1.0.3) (2026-07-08)
+
+### Chores
+
+* update og-image to use Thumbnail-4dacathering.png ([1057b60](https://github.com/ryansutrisno/4dacathering/commit/1057b60bec0d94dd2a1817188757235e1f08690c))
+
 ## [1.0.2](https://github.com/ryansutrisno/4dacathering/compare/v1.0.1...v1.0.2) (2026-07-08)
 
 ### Bug Fixes
