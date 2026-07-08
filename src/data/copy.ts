@@ -7,7 +7,7 @@ export const brand = {
 export const meta = {
   title: '4DA Cathering \u2014 Aroma Bakar Otentik, Warisan Tradisi',
   description: 'Nikmati kelezatan ayam bakar bumbu rahasia 4DA Cathering dengan teknik pemanggangan tradisional. Spesialis catering ayam bakar di Jepara. Pesan sekarang via WhatsApp!',
-  image: '/og-image.png',
+  image: '/Thumbnail-4dacathering.png',
   imageAlt: '4DA Cathering - Spesialis Ayam Bakar Jepara',
 } as const;
 
