@@ -6,9 +6,9 @@ export const brand = {
 
 export const meta = {
   title: '4DA Cathering \u2014 Aroma Bakar Otentik, Warisan Tradisi',
-  description: 'Nikmati kelezatan ayam bakar bumbu rahasia 4DA Cathering dengan teknik pemanggangan tradisional. Spesialis catering ayam bakar di Karawang. Pesan sekarang via WhatsApp!',
+  description: 'Nikmati kelezatan ayam bakar bumbu rahasia 4DA Cathering dengan teknik pemanggangan tradisional. Spesialis catering ayam bakar di Jepara. Pesan sekarang via WhatsApp!',
   image: '/og-image.png',
-  imageAlt: '4DA Cathering - Spesialis Ayam Bakar Karawang',
+  imageAlt: '4DA Cathering - Spesialis Ayam Bakar Jepara',
 } as const;
 
 export interface MenuItem {
@@ -67,8 +67,8 @@ export const location = {
   region: 'Jawa Tengah, Indonesia',
   hours: 'Setiap Hari',
   hourDetail: '10:00 - Sampai Habis',
-  mapsUrl: 'https://maps.app.goo.gl/1XRr5fTbNqs9Qnni8',
-  mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3965.6881602222793!2d107.29150069!3d-6.30464006!3m2!1i1024!2i768!4f13.1!2m1!1sThe%20kunyah%20Food%20Galery!5e0!3m2!1sid!2sid!4v1780642326073!5m2!1sid!2sid',
+  mapsUrl: 'https://maps.app.goo.gl/xCY1cqAbcH99KFTJ8',
+  mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3963.5847689266952!2d110.6959444!3d-6.5739722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzQnMjYuMyJTIDExMMKwNDEnNDUuNCJF!5e0!3m2!1sen!2sid!4v1783486501712!5m2!1sen!2sid',
   testimonial: '"Pelayanan cepat, rasa mantap. Ayam bakarnya juara di daerah Jepara!"',
   testimonialAuthor: '\u2014 Pelanggan Setia',
 } as const;
