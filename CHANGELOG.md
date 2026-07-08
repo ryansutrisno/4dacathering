@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/ryansutrisno/4dacathering/compare/v1.0.1...v1.0.2) (2026-07-08)
+
+### Bug Fixes
+
+* generate and add favicon from logo to fix 404 error ([9234679](https://github.com/ryansutrisno/4dacathering/commit/9234679347bc74fba9428c2f8a5fe59fbc564376))
+
 ## [1.0.1](https://github.com/ryansutrisno/4dacathering/compare/v1.0.0...v1.0.1) (2026-07-08)
 
 ### Bug Fixes
